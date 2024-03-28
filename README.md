@@ -1,1 +1,2 @@
-# HarryPotter This is a Harry Potter Theme page.
+# This is a Harry Potter Theme page.
+Author- Dhruv Bhardwaj
