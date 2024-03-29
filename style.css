@@ -1,0 +1,85 @@
+/* body  */
+#display{
+    align-items: center;
+    text-align: center;
+}
+#content{
+    display: flex;
+    flex-direction: row;
+}
+#left{
+    width: 170vw;
+}
+
+/* #right{
+    text-align: center;
+} */
+#right img{
+    width: 90%;
+}
+#left div {
+    margin: 20px;
+    padding: 10px;
+    background-color: #444;
+}
+h2 {
+    font-family: 'UnifrakturCook', cursive;
+    font-size: 40px;
+    color: #ffc600;
+    margin:10px 0px;
+}
+p {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+.displayimg{
+    margin: 20px;
+    height: 180px;
+}
+
+#display{
+    text-align: center;
+}
+
+/* table  */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+th {
+    background-color: #222;
+}
+
+/* form  */
+form {
+    margin-top: 20px;
+    color: #fff;
+}
+input[type="text"], input[type="email"] {
+    /* width: 100%; */
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #666;
+    color: #fff;
+    border: none;
+}
+input[type="radio"] {
+    margin-right: 10px;
+}
+input[type="submit"] {
+    background-color: #ffc600;
+    color: #222;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+#review{
+    height: 200px;
+    width: 300px;
+}

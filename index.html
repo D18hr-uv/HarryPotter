@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Harry Potter Movie Series</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=UnifrakturCook:wght@700&display=swap');
+        body {
+            font-family: Arial, sans-serif;
+            background-color: black;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+        }
+        /* header */
+        header {
+            font-family: 'UnifrakturCook', cursive;
+            background-color: #222;
+            text-align: center;
+            padding: 20px;
+        }
+        header img{
+            height: 20vh;
+        }
+
+        /* navbar */
+        nav {
+            background-color: #555;
+            text-align: center;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        nav li {
+            display: inline;
+            margin: 10px;
+        }
+        a {
+            text-decoration: none;
+            color: #fff;
+        }
+        
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #444;
+            min-width: 160px;
+            z-index: 1;
+        }
+
+        .dropdown:hover .dropdown-content {
+            display: block;
+        }
+
+        .dropdown-content a {
+            color: #fff;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #555;
+        }
+
+        
+    </style>
+    
+</head>
+<body>
+    <header>
+        <img src="/static/original-baf19e4c08c65119f1cc6650ff3e7db7 (1).jpg">
+        <h1 style="font-size: 50px;">Harry Potter Movie Series</h1>
+    </header>
+    <section id="display">
+        <img class="img" src="static/Harry-Potter.jpg">
+    </section>
+    <nav>
+        <div class="dropdown">
+            <a href="#overview">Overview</a>
+            <div class="dropdown-content">
+                <a href="#overview">Overview</a>
+                <a href="#movies">Movies</a>
+                <a href="#cast">Cast</a>
+                <a href="#awards">Awards</a>
+            </div>
+        </div>
+        <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#movies">Movies</a></li>
+            <li><a href="#cast">Cast</a></li>
+            <li><a href="#awards">Awards</a></li>
+        </ul>
+    </nav>
+    <section id="content">
+    <div id="left">
+        <div id="overview">
+            <h2>Overview</h2>
+            <p>The Harry Potter movie series is a popular</p>
+            <a href="https://www.pottermore.com/" target="_blank">fantasy film franchise</a> 
+            <hr>
+            <p>based on the Harry Potter novels by J.K. Rowling. The series follows the adventures of a young wizard, Harry Potter, and his friends at Hogwarts School of Witchcraft and Wizardry.</p>
+        </div>
+        <div id="movies">
+            <h2>Movies</h2>
+                <ol>
+                    <li>Harry Potter and the Sorcerer's Stone (2001)</li>
+                    <li>Harry Potter and the Chamber of Secrets (2002)</li>
+                    <li>Harry Potter and the Prisoner of Azkaban (2004)</li>
+                    <li>Harry Potter and the Goblet of Fire (2005)</li>
+                    <li>Harry Potter and the Order of the Phoenix (2007)</li>
+                    <li>Harry Potter and the Half-Blood Prince (2009)</li>
+                    <li>Harry Potter and the Deathly Hallows - Part 1 (2010)</li>
+                    <li>Harry Potter and the Deathly Hallows - Part 2 (2011)</li>
+                </ol>
+        </div>
+        <div id="cast">
+            <h2>Cast</h2>
+            <table>
+                <tr>
+                    <th>Real Name</th>
+                    <th>Character</th>
+                    <th>Total Screen Time</th>
+                </tr>
+                <tr>
+                    <td>Daniel Radcliffe</td>
+                    <td>Harry Potter</td>
+                    <td>Approx. 20 hours</td>
+                </tr>
+                <tr>
+                    <td>Emma Watson</td>
+                    <td>Hermione Granger</td>
+                    <td>Approx. 19 hours</td>
+                </tr>
+                <tr>
+                    <td>Rupert Grint</td>
+                    <td>Ron Weasley</td>
+                    <td>Approx. 19 hours</td>
+                </tr>
+            </table>
+        </div>
+        <div id="awards">
+            <h2>Awards</h2>
+            <p>The Harry Potter movies received numerous awards and nominations, including Academy Awards, BAFTAs, and more, for their outstanding achievements in filmmaking and storytelling.</p>
+        </div>
+        <div id="display">
+            <h2>Images</h2>
+            <img class="displayimg" src="static/dis1.jpg" alt="Harry Potter Movie Poster">
+            <img class="displayimg" src="static/R (2).jpg" alt="Harry Potter Movie Poster">
+            <img class="displayimg" src="static/dis3.jpg" alt="Harry Potter Movie Poster">
+            <img class="displayimg" src="static/dis2.jpg" alt="Harry Potter Movie Poster">
+            <img class="displayimg" src="static/R (4).jpg" alt="Harry Potter Movie Poster">
+            <img class="displayimg" src="static/R (3).jpg" alt="Harry Potter Movie Poster">
+        </div>
+    
+        <div>
+            <h2 style="text-align: center;">Give your review about Harry Potter Movies</h2>
+            <form style="align-items: center; text-align: center;">
+                <label for="name" style="font-size: larger;">Name</label><br>
+                <input id="name" type="text" placeholder="Name"><br>
+                <label for="country" style="font-size: larger;">Country</label><br>
+                <input id="country" type="text" placeholder="Country"><br>
+                <label for="email" style="font-size: larger;">Email</label><br>
+                <input id="email" type="email" placeholder="Email">
+            
+                <div>
+                    <p style="font-size: larger;">Choose a Harry Potter movie:</p>
+                    <input type="radio" id="sorcerersStone" name="movie" value="Sorcerer's Stone">
+                    <label for="sorcerersStone">Harry Potter and the Sorcerer's Stone</label><br>
+                    <input type="radio" id="chamberOfSecrets" name="movie" value="Chamber of Secrets">
+                    <label for="chamberOfSecrets">Harry Potter and the Chamber of Secrets</label><br>
+                    <input type="radio" id="prisonerOfAzkaban" name="movie" value="prisonerOfAzkaban">
+                    <label for="prisonerOfAzkaban">Harry Potter and the Prisoner of Azkaban</label><br>
+                    <input type="radio" id="gobletOfFire" name="movie" value="gobletOfFire">
+                    <label for="gobletOfFire">Harry Potter and the Goblet of Fire</label><br>
+                    <input type="radio" id="orderOfThePhoenix" name="movie" value="orderOfThePhoenix">
+                    <label for="orderOfThePhoenix">Harry Potter and the Order of the Phoenix</label><br>
+                    <input type="radio" id="halfBloodPrince" name="movie" value="halfBloodPrince">
+                    <label for="halfBloodPrince">Harry Potter and the Half-Blood Prince</label><br>
+                    <input type="radio" id="deathlyHallows1" name="movie" value="deathlyHallows1">
+                    <label for="deathlyHallows1">Harry Potter and the Deathly Hallows - Part 1</label><br>
+                    <input type="radio" id="deathlyHallows2" name="movie" value="deathlyHallows2">
+                    <label for="deathlyHallows2">Harry Potter and the Deathly Hallows - Part 2</label><br>
+                
+                </div>
+    
+                <label for="review">Review</label><br>
+                <textarea id="review" placeholder="Your review" ></textarea>
+                <br>    
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+    <div id="right">
+        <img src="static/What If HARRY POTTER Was Anime_.jpg" alt="Harry Potter image">
+    </div>
+</section>
+</body>
+</html>
