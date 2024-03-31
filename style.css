@@ -1,4 +1,71 @@
 /* body  */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Playfair+Display+SC&family=UnifrakturCook:wght@700&display=swap');
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+/* header */
+header {
+    font-family: 'UnifrakturCook', cursive;
+    background-color: #222;
+    text-align: center;
+    padding: 20px;
+}
+header img{
+    height: 20vh;
+}
+
+/* navbar */
+nav {
+    background-color: #555;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav li {
+    display: inline;
+    margin: 10px;
+}
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #444;
+    min-width: 160px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content a {
+    color: #fff;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #555;
+}
+
 #display{
     align-items: center;
     text-align: center;
